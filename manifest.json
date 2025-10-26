@@ -1,0 +1,16 @@
+{
+  "name": "Horario de Clases UCS Sucre",
+  "short_name": "Horario UCS",
+  "description": "Aplicación de horario de clases en tiempo real para UCS Sucre.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fee2e2",
+  "theme_color": "#b91c1c",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

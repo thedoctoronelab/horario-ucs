@@ -1,0 +1,5 @@
+{
+  "name": "Horario de Clases UCS Sucre",
+  "description": "A real-time weekly class schedule application for UCS Sucre. Features a login portal for students, teachers, and administrators. It displays a schedule from 7 AM to 6 PM, allowing authorized users to edit class details on the fly, with changes instantly visible to all users.",
+  "requestFramePermissions": []
+}
