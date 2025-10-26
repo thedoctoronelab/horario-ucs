@@ -1,12 +1,8 @@
 import { GoogleGenAI } from "@google/genai";
 
-// Ensure the API key is available in the environment variables
-const apiKey = process.env.API_KEY;
-if (!apiKey) {
-  throw new Error("API_KEY environment variable not set");
-}
-
-const ai = new GoogleGenAI({ apiKey });
+// Initialize the Google AI client directly.
+// The execution environment will safely inject the API key.
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const generateDescription = async (subject: string): Promise<string> => {
   try {
@@ -14,7 +10,6 @@ export const generateDescription = async (subject: string): Promise<string> => {
     
     const response = await ai.models.generateContent({
       model: 'gemini-2.5-flash',
-      // FIX: Simplified the 'contents' structure for a simple text prompt.
       contents: prompt,
     });
 
